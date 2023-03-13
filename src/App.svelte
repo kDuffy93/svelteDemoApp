@@ -22,28 +22,25 @@ let rentalDataLinks = [
                         {href : "/login", linkText : "Log in"},
                       ];
 let landingPageLinks = [{href : "/login", linkText : "Log In"}];
-
-
-
-
-
 </script>
 
 <Router {url}>
-  <Route path="/"
-    ><Header title={"landingPage"} navList={landingPageLinks} /><LandingPage
-    /></Route
-  >
-  <Route path="login"
-    ><Header title={"login"} navList={loginLinks} /><Login /></Route
-  >
-  <Route path="heatMap"
-    ><Header title={"heatMap"} navList={heatMapLinks} /> <HeatMap /></Route
-  >
-  <Route path="rentalData"
-    ><Header title={"rentalData"} navList={rentalDataLinks} /><RentalData
-    /></Route
-  >
+  <Route path="/">
+    <Header navList={landingPageLinks} />
+    <LandingPage/>
+  </Route>
+  <Route path="login">
+    <Header title={"login"} navList={loginLinks} />
+    <Login />
+  </Route>
+  <Route path="heatMap">
+    <Header title={"heatMap"} navList={heatMapLinks} /> 
+    <HeatMap />
+  </Route>
+  <Route path="rentalData">
+    <Header title={"rentalData"} navList={rentalDataLinks} />
+    <RentalData/>
+  </Route>
   <Footer />
 </Router>
 

@@ -1,10 +1,5 @@
 
-<script>
-
-
-
-</script>
-
+<script></script>
 <main>
     <section class="container">
         <form>

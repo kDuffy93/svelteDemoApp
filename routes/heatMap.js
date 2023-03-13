@@ -8,3 +8,4 @@ router.get('/', (req, res) => {  res.send({
 })
 console.log('heatMapPage');
 });
+
